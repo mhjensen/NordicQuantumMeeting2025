@@ -170,7 +170,7 @@ systems will be discussed.
 
 \item Original inspiration a series of articles of Loss and DiVincenzo from the nineties, Quantum Computation with Quantum Dots \href{{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.57.120}}{\nolinkurl{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.57.120}}
 
-\item N.R.~Beysengulov, J.~Pollanen, \O .S.~Sch\o ¸yen, S.D.~Bilek, J.B.~Flaten, O.M.~Leinonen, H.E.~Kristiansen, Z.J.~Stewart, J.D.~Weidman, A.K.~Wilson, M.~Hjorth-Jensen, Coulomb interaction-driven entanglement of electrons on helium, PRX Quantum 5, 030324 (2024) and \href{{https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.030324}}{\nolinkurl{https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.030324}}
+\item N.R.~Beysengulov, J.~Pollanen, \O .S.~Sch\o yen, S.D.~Bilek, J.B.~Flaten, O.M.~Leinonen, H.E.~Kristiansen, Z.J.~Stewart, J.D.~Weidman, A.K.~Wilson, M.~Hjorth-Jensen, Coulomb interaction-driven entanglement of electrons on helium, PRX Quantum 5, 030324 (2024) and \href{{https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.030324}}{\nolinkurl{https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.030324}}
 \end{enumerate}
 
 \noindent
@@ -525,11 +525,10 @@ processing.
 \end{frame}
 
 \begin{frame}[plain,fragile]
-\frametitle{Electrons on helium is another qubit platform}
+\frametitle{Electrons on helium as another qubit platform}
 
-\textbf{To our knowledge two qubit gates have never been discussed in a proper manner for these systems.}
 
-\begin{block}{}
+\begin{block}{Two qubit gates}
 The static Coulomb interaction arises from a virtual photon exchange
  process between two charge particles according to quantum
  electrodynamics. This results in a correlated motion of two charges generating quantum entanglement. 
@@ -594,16 +593,6 @@ any qubit platform.
 
 
 
-
-
-
-
-
-
-
-
-
-
 \begin{frame}[plain,fragile]
 \frametitle{Results and discussions}
 
@@ -636,41 +625,77 @@ V(\lambda) = (1-\lambda)V_\mathrm{I} + \lambda V_\mathrm{III}
 \end{equation}
 \end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Entanglement and more}
+\frame
+    {
+      \frametitle{Entaglement}
+	
+      \begin{footnotesize}
+     \begin{columns}
+       \column{5.0cm}
+\begin{itemize}
+\item[(a)] Transition frequencies from the ground state of the five lowest excited energy eigenstates
 
-\vspace{6mm}
+\item[(b)] Von Neumann entropies of the same five eigenstates as functions of $\lambda$
 
-% inline figure
-\centerline{\includegraphics[width=0.8\linewidth]{qcfigures/crossings-entropies-anharmonicities-1.png}}
+\item[(c)] Anharmonicites of the left and right wells 
+\end{itemize}
 
-\vspace{6mm}
-\end{frame}
+\column{6cm}
+      \begin{center}
+	\includegraphics[width=0.65\textwidth]{qcfigures/entanglement.pdf}
+      \end{center}
+\end{columns}
+      \end{footnotesize}
+    }
 
-\begin{frame}[plain,fragile]
-\frametitle{Legend to figure}
 
-\begin{enumerate}
-\item (a) In this figure we have plotted the transition energy from the ground state to the labeled excited state as a function of the voltage parameter $\lambda$. The labeled states are the computational basis states when $\lambda = 0$.
+\frame
+    {
+      \frametitle{Coefficients of states}
+	
+      \begin{footnotesize}
+     \begin{columns}
+       \column{5.0cm}
+\begin{itemize}
+\item[(a)] Transition frequencies from the ground state of the five lowest excited energy eigenstates
 
-\item (b) The von Neumann entropy of the five lowest excited states of the two-body Hamiltonian as a function of the configuration parameter $\lambda$. The ground state has zero entropy, or close to zero entropy. We have included the points for the double and triple degeneracy points. $\lambda_{II}$ and $\lambda_{III}$ in the figure. The von Neumann entropy is calculated using the binary logarithm.
+\item[(b)] Von Neumann entropies of the same five eigenstates as functions of $\lambda$
 
-\item (c) In this figure we have plotted the anharmonicites for the left well ($\alpha^L$) and the right well ($\alpha^R$) as a function of the well parameterization $\lambda$. We have also included the detuning $\Delta \omega = \omega^R - \omega^L$ between the two wells. We have marked configuration II at $\lambda_{II} \approx 0.554$ and configuration III at $\lambda_{III} = 1$.
-\end{enumerate}
+\item[(c)] Anharmonicites of the left and right wells 
+\end{itemize}
 
-\noindent
-\end{frame}
+\column{6cm}
+      \begin{center}
+	\includegraphics[width=0.65\textwidth]{qcfigures/coeffs.pdf}
+      \end{center}
+\end{columns}
+      \end{footnotesize}
+    }
 
-\begin{frame}[plain,fragile]
-\frametitle{Particle densities and coefficients}
+\frame
+    {
+      \frametitle{Probabilities}
+	
+      \begin{footnotesize}
+     \begin{columns}
+       \column{5.0cm}
+\begin{itemize}
+\item[(a)] Transition frequencies from the ground state of the five lowest excited energy eigenstates
 
-\vspace{6mm}
+\item[(b)] Von Neumann entropies of the same five eigenstates as functions of $\lambda$
 
-% inline figure
-\centerline{\includegraphics[width=0.8\linewidth]{qcfigures/configuration_I-1.png}}
+\item[(c)] Anharmonicites of the left and right wells 
+\end{itemize}
 
-\vspace{6mm}
-\end{frame}
+\column{6cm}
+      \begin{center}
+	\includegraphics[width=0.65\textwidth]{qcfigures/probability.pdf}
+      \end{center}
+\end{columns}
+      \end{footnotesize}
+    }
+
+
 
 
 
@@ -680,9 +705,9 @@ V(\lambda) = (1-\lambda)V_\mathrm{I} + \lambda V_\mathrm{III}
 \frametitle{Where we are now}
 
 \begin{enumerate}
-\item Adding time-dependent studies of two electrons in two wells in one and two dimensions
+\item Adding time-dependent studies of two electrons in two wells
 
-\item Studies of the time-evolution of entangled states (now two electrons only)
+\item Studies of the time-evolution of entangled states
 
 \item Use theory to find optimal experimental setup
 
@@ -696,13 +721,12 @@ V(\lambda) = (1-\lambda)V_\mathrm{I} + \lambda V_\mathrm{III}
 \frametitle{Plans}
 
 \begin{enumerate}
-\item Add two and three-dimensions in order to simulate in  a more realistic way such many-body systems.
+\item Included  two and three-dimensions (DFT basis) in order to simulate in  a more realistic way such many-body systems.
 
-\item Develop time-dependent FCI code, useful up to approximately 10 particles with \textbf{effective} (and effective Hilbert space) Hamiltonians in two and three dimensions
+\item New time-dependent FCI code, useful up to approximately 10 particles with \textbf{effective} (and effective Hilbert space) Hamiltonians in two and three dimensions
 
 \item Develop codes for studies of entanglement as function of time
 
-\item Do tomogrophy and extract density matrix and compare with experiment.
 
 \item Study the feasibility of various setups for quantum simulations of specific Hamiltonians such as the Lipkin model
 
@@ -717,4 +741,3 @@ V(\lambda) = (1-\lambda)V_\mathrm{I} + \lambda V_\mathrm{III}
 
 \end{document}
 
-\end{document}
