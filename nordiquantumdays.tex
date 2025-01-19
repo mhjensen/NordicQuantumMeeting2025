@@ -500,30 +500,7 @@ gate, cross-resonance gates etc.
 \end{block}
 \end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Entanglement gates in trapped ions and more}
 
-\begin{block}{}
-Entanglement gates in trapped ions are
-produced by means of the Coulomb interaction, where shared motional
-modes of two or more ions, entangled to their internal states, used
-for transferring excitations between ion
-qubits. This has been experimentally
-demonstrated.
-\end{block}
-
-\begin{block}{}
-In photonic quantum
-computing schemes two-qubit entangling operations are realized by
-nonlinear interactions between two photons scattering from quantum
-dots, plasmonic nanowires, diamond vacancy centers and others embedded
-into waveguides. Two-qubit gates in
-semiconductor quantum dots are based on spin-spin exchange
-interactions or generated
-by coupling to a superconducting resonator via artificial spin-orbit
-interaction.
-\end{block}
-\end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Quantum dots and the Coulomb interaction}
@@ -555,8 +532,7 @@ processing.
 \begin{block}{}
 The static Coulomb interaction arises from a virtual photon exchange
  process between two charge particles according to quantum
- electrodynamics. This results in a correlated motion of two charges
- generating quantum entanglement. 
+ electrodynamics. This results in a correlated motion of two charges generating quantum entanglement. 
 \end{block}
 \end{frame}
 
@@ -575,7 +551,7 @@ vacuum.
 \end{block}
 
 \begin{block}{}
-The weak interaction with rthe enviroment, which is mainly governed
+The weak interaction with the enviroment, which is mainly governed
 by interaction with quantized surface capillary waves (ripplons) and
 bulk phonons, ensures long coherence times - a vital ingredient for
 any qubit platform. 
@@ -585,7 +561,6 @@ any qubit platform.
 \begin{frame}[plain,fragile]
 \frametitle{Calculational details}
 
-Hamiltonian:
 \begin{align}
 \hat{H} &=\frac{\hat{p}_1^2}{2} + \sum_{i = 1}^7 V_i\alpha_i[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + \sum_{i = 1}^7 V_i\alpha_i[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}}\\
 &= h[\hat{p}_1,\hat{x}_1] + h[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
@@ -602,7 +577,6 @@ Hamiltonian:
 \begin{frame}[plain,fragile]
 \frametitle{Calculational details}
 
-Hamiltonian:
 \begin{align}
 \hat{H} &= \frac{\hat{p}_1^2}{2} + v[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}}\\
 &= h[\hat{p}_1,\hat{x}_1] + h[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
@@ -620,119 +594,15 @@ Hamiltonian:
 
 
 
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
 
-Hamiltonian:
-\begin{align}
-\hat{H} &= \frac{\hat{p}_1^2}{2} + v[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}} \\
-&\equiv h[\hat{p}_1,\hat{x}_1] + h[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
-\end{align}
 
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i < j} C_{ij, k}\frac{\vert \varphi_i \varphi_j\rangle - \vert \varphi_j \varphi_i\rangle}{\sqrt{2}},
-\end{equation}
-(Slater basis)
-\end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
 
-Hamiltonian:
-\begin{align}
-\hat{H} &= \frac{\hat{p}_1^2}{2} + v^L[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v^R[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}} \\
-&\equiv h^L[\hat{p}_1,\hat{x}_1] + h^R[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
-\end{align}
 
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i} \sum_{j} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(product basis)
-\end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
 
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i} \sum_{j} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(product basis)
 
-\vspace{6mm}
 
-% inline figure
-\centerline{\includegraphics[width=0.9\linewidth]{qcfigures/Hartree_states.png}}
-
-\vspace{6mm}
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
-
-Hamiltonian:
-\begin{align}
-\hat{H} &= \frac{\hat{p}_1^2}{2} + v^L[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v^R[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}} \\
-&\equiv h^L[\hat{p}_1,\hat{x}_1] + h^R[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
-\end{align}
-
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i} \sum_{j} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(Hartree basis)
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
-
-Hamiltonian:
-\begin{align}
-\hat{H} &= \frac{\hat{p}_1^2}{2} + v^L[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v^R[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}} \\
-&\equiv h^L[\hat{p}_1,\hat{x}_1] + h^R[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
-\end{align}
-
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i = 0}^{N^L} \sum_{j = 0}^{N^R} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(Hartree basis)
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
-
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i = 0}^{N^L} \sum_{j = 0}^{N^R} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(Hartree basis)
-
-\vspace{6mm}
-
-% inline figure
-\centerline{\includegraphics[width=0.9\linewidth]{qcfigures/Hartree_coefs.png}}
-
-\vspace{6mm}
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Calculational details}
-
-Hamiltonian:
-\begin{align}
-\hat{H} &= \frac{\hat{p}_1^2}{2} + v^L[\hat{x}_1] + \frac{\hat{p}_2^2}{2} + v^R[\hat{x}_2] + \frac{\kappa}{\sqrt{(\hat{x}_1-\hat{x}_2)^2 + a^2}} \\
-&\equiv h^L[\hat{p}_1,\hat{x}_1] + h^R[\hat{p}_2,\hat{x}_2] + u[\hat{x}_1,\hat{x}_2]
-\end{align}
-
-Energy states:
-\begin{equation}
-\vert\Phi_k\rangle = \sum_{i = 0}^{N^L} \sum_{j = 0}^{N^R} C_{ij, k}\vert \varphi^L_i \varphi^R_j\rangle,
-\end{equation}
-(Hartree basis)
-\end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Results and discussions}
@@ -802,16 +672,6 @@ V(\lambda) = (1-\lambda)V_\mathrm{I} + \lambda V_\mathrm{III}
 \vspace{6mm}
 \end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Potential wells, the one-body densities, and single-particle states}
-
-\vspace{6mm}
-
-% inline figure
-\centerline{\includegraphics[width=1.0\linewidth]{qcfigures/configuration_II_and_III-1.png}}
-
-\vspace{6mm}
-\end{frame}
 
 
 \section{Conclusions and perspectives}
